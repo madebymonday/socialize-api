@@ -6,3 +6,5 @@ RUN apt-get update && \
 ADD . /tmp
 WORKDIR /tmp
 RUN bundle install --without development
+
+ENTRYPOINT ["bundle", "install"]
